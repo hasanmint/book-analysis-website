@@ -1,7 +1,7 @@
 import React from 'react';
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
 
-const MyLineChart = () => {
+const InvestAreaChart = () => {
     const data = [
         {
             "month": "Mar",
@@ -40,11 +40,10 @@ const MyLineChart = () => {
             "revenue": 61000
         }
     ];
- 
+
     return (
         <div>
-            <AreaChart width={730} height={250} data={data}
-                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+            <AreaChart width={530} height={300} data={data}>
                 <defs>
                     <linearGradient id="colorinvestment" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#38CC77" stopOpacity={0.8} />
@@ -66,4 +65,4 @@ const MyLineChart = () => {
     );
 };
 
-export default MyLineChart;
+export default InvestAreaChart;

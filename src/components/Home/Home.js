@@ -11,6 +11,7 @@ const Home = () => {
 
     return (
         <>
+
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -22,7 +23,7 @@ const Home = () => {
                             Islamic belief on scientific advancement, social structures, and cultural development is given due prominence, and the text is complemented by portraits of key personalities, inventions and little known historical nuggets. The history of Islam and of the world's Muslims brings together diverse
                             peoples, geographies and states, all interwoven into one narrative that begins with Muhammad and continues to this day.</p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">See More</button>
+                            <button className="inline-flex text-white bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">See More</button>
 
                         </div>
                     </div>
@@ -45,7 +46,7 @@ const Home = () => {
                         }
 
                     </div>
-                    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><Link to="/reviews">Load More Review</Link></button>
+                    <button class="flex mx-auto mt-16 text-white bg-teal-600 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg"><Link to="/reviews">Load More Review</Link></button>
                 </div>
             </section>
 
