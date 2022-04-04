@@ -9,11 +9,11 @@ import Blogs from './components/Blogs/Blogs';
 import About from './components/About/About';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Page404 from './components/Page404/Page404';
 
 function App() {
   return (
     <div className="App">
-      <h2 className='text-3xl font-bold underline bg-sky-300'>Welcome Product Analysis Website</h2>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -22,6 +22,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='*' element={<Page404></Page404>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
