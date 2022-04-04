@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Review = (props) => {
     const { name, rating, description, picture } = props.review;
+
+    
     return (
         <>
 

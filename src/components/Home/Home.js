@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
+
+    const slice = reviews.slice(0, 3);
+
+
     return (
         <>
             <section className="text-gray-600 body-font">
@@ -29,10 +34,10 @@ const Home = () => {
 
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
-                    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Coustomer Review ({reviews.length})</h1>
+                    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Coustomer Review ({slice.length})</h1>
                     <div class="flex flex-wrap -m-4">
                         {
-                            reviews.map(review =>
+                            slice.map(review =>
                                 <Review
                                     key={review.id}
                                     review={review}
@@ -40,7 +45,7 @@ const Home = () => {
                         }
 
                     </div>
-                    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Load More Review</button>
+                    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><Link to="/reviews">Load More Review</Link></button>
                 </div>
             </section>
 
