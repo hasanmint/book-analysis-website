@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Navbar = () => {
     return (
-        <div className='sticky top-0 bg-slate-200 px-12 py-5 flex justify-center  md:justify-between'>
+        <nav className='sticky top-0 bg-slate-200 px-12 py-5 flex justify-center  md:justify-between uppercase'>
             <div className='hidden md:block'><Link to='/' className='font-sans font-bold text-xl'>Logo</Link></div>
             <div className='flex gap-4 text-xl '>
-                <Link to='/'>Home</Link>
-                <Link to='/reviews'>Reivews</Link>
-                <Link to='/dashboard'>Dashboard</Link>
-                <Link to='/blogs'>Blogs</Link>
-                <Link to='/about'>About</Link>
+                <CustomLink to='/'>Home</CustomLink>
+                <CustomLink to='/reviews'>Reivews</CustomLink>
+                <CustomLink to='/dashboard'>Dashboard</CustomLink>
+                <CustomLink to='/blogs'>Blogs</CustomLink>
+                <CustomLink to='/about'>About</CustomLink>
             </div>
-        </div>
+        </nav>
     );
 };
 
