@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './images/logo.png';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Reviews from './components/Reviews/Reviews';

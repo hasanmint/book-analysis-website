@@ -23,7 +23,7 @@ const Home = () => {
                             Islamic belief on scientific advancement, social structures, and cultural development is given due prominence, and the text is complemented by portraits of key personalities, inventions and little known historical nuggets. The history of Islam and of the world's Muslims brings together diverse
                             peoples, geographies and states, all interwoven into one narrative that begins with Muhammad and continues to this day.</p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">See More</button>
+                            <button className="inline-flex text-white bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Live Read PDF</button>
 
                         </div>
                     </div>

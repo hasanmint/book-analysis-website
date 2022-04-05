@@ -45,8 +45,8 @@ const InvestBarChart = () => {
     return (
         <div>
             <BarChart
-                width={500}
-                height={300}
+                width={420}
+                height={280}
                 data={data}
                 margin={{
                     top: 20,

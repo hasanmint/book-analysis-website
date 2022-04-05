@@ -42,8 +42,8 @@ const InvestLineChart = () => {
     ];
     return (
         <div>
-            <LineChart width={500}
-                height={300}
+            <LineChart width={420}
+                height={280}
                 data={data}
                 margin={{
                     top: 5,

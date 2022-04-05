@@ -11,8 +11,8 @@ const InvestAreaChart = () => {
         },
         {
             "month": "Apr",
-            "investment": 20000,
-            "sell": 60000,
+            "investment": 30000,
+            "sell": 50000,
             "revenue": 24500
         },
         {
@@ -43,7 +43,7 @@ const InvestAreaChart = () => {
 
     return (
         <div>
-            <AreaChart width={530} height={300} data={data}>
+            <AreaChart width={420} height={280} data={data}>
                 <defs>
                     <linearGradient id="colorinvestment" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#38CC77" stopOpacity={0.8} />
