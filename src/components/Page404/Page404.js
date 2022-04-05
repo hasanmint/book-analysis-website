@@ -15,7 +15,7 @@ const Page404 = () => {
                     <p className='mb-5 text-base text-left text-gray-800 md:text-xl'>
                         You might have the wrong broken, or the page may have moved.
                     </p>
-                    <button className='w-full mb-2 py-2 px-3 text-white mt-3 bg-cyan-600 sm:w-auto sm:mb-0'>
+                    <button className='w-full mb-2 py-2 px-3 text-white mt-3 bg-teal-600 sm:w-auto sm:mb-0'>
                         <Link to='/'>Back to Home</Link>
                     </button>
 
